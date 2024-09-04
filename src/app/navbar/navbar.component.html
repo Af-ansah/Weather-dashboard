@@ -1,6 +1,20 @@
 <div class="main-nav">
-<div class="search">search</div>
-<div class="user-details">
-
-</div>
+  <div class="search">
+    <app-search
+      placeholder="Search "
+      [(ngModel)]="searchText"
+      (ngModelChange)="search()"
+    >
+      <img
+        src="../../assets/image/search-icon.png"
+        alt="search"
+        class="search-icon"
+      />
+    </app-search>
+  </div>
+  <div class="user-details">
+    <img src="../../assets/image/Notification.png" alt="notification">
+    <img src="../../assets/image/Account.png" alt="account">
+    <img src="../../assets/image/Vector (1).png" alt="vector">
+  </div>
 </div>
