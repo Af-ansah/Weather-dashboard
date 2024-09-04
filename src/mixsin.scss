@@ -1,22 +1,27 @@
 $light-mode: (
-  background: #F2F2F2,
+  background: #FFFFFF,
   text: #000000,
-  card-background: #FFFFFF,
-  card-text: #111517,
-  card-text-details: #d6d4d4,
-  border: #e0e0e0,
-  filter-background: #f0f0f0
+  card-background: #F8F8F8,
+  card-text: #333333,
+  card-text-details: #666666,
+  border: #E0E0E0,
+  filter-background: #F0F0F0,
+  sidebar-background: #000080, 
+  highlight: #4B0082, 
 );
 
 $dark-mode: (
   background: #202C36,
-  text: #ffffff,
+  text: #FFFFFF,
   card-background: #2B3844,
   card-text: #FFFFFF,
-  card-text-details: #d6d4d4,
+  card-text-details: #D6D4D4,
   border: #555555,
-  filter-background: #444444
+  filter-background: #444444,
+  sidebar-background: #000080, 
+  highlight: #4B0082, 
 );
+
 
 @function get-color($theme, $color) {
   @return map-get($theme, $color);
