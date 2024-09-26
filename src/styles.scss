@@ -8,6 +8,9 @@
   --border: #{get-color($light-mode, border)};
   --filter-background: #{get-color($light-mode, filter-background)};
   --sidebar-background: #{get-color($light-mode, sidebar-background)};
+  --sidebar-text: #{get-color($light-mode, sidebar-text)};
+  --sidebar-hover: #{get-color($light-mode, sidebar-hover)};
+  --sidebar-active: #{get-color($light-mode, sidebar-active)};
   --highlight: #{get-color($light-mode, highlight)};
 }
 
@@ -19,9 +22,11 @@
   --border: #{get-color($dark-mode, border)};
   --filter-background: #{get-color($dark-mode, filter-background)};
   --sidebar-background: #{get-color($dark-mode, sidebar-background)};
+  --sidebar-text: #{get-color($dark-mode, sidebar-text)};
+  --sidebar-hover: #{get-color($dark-mode, sidebar-hover)};
+  --sidebar-active: #{get-color($dark-mode, sidebar-active)};
   --highlight: #{get-color($dark-mode, highlight)};
 }
-
 body {
   background-color: var(--background);
   margin: 0;

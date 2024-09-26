@@ -6,7 +6,10 @@ $light-mode: (
   card-text-details: #666666,
   border: #E0E0E0,
   filter-background: #F0F0F0,
-  sidebar-background: #000080, 
+  sidebar-background: #000080,
+  sidebar-text: #FFFFFF,
+  sidebar-hover: #0000B3,
+  sidebar-active: #4169E1,
   highlight: #4B0082, 
 );
 
@@ -18,10 +21,12 @@ $dark-mode: (
   card-text-details: #D6D4D4,
   border: #555555,
   filter-background: #444444,
-  sidebar-background: #000080, 
+  sidebar-background: #000080,
+  sidebar-text: #FFFFFF,
+  sidebar-hover: #0000B3,
+  sidebar-active: #4169E1,
   highlight: #4B0082, 
 );
-
 
 @function get-color($theme, $color) {
   @return map-get($theme, $color);
