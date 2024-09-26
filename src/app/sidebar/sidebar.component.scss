@@ -30,6 +30,10 @@
 .sidebar-nav-link:hover {
   background-color: var(--sidebar-hover);
 }
+.sidebar-nav-link.active {
+  background-color: var(--sidebar-active);
+  font-weight: bold;
+}
 
 .sidebar-icon {
   width: 2rem;

@@ -1,5 +1,10 @@
 
 <div class="dashboard-container">
     <app-sidebar></app-sidebar>
-    <app-navbar></app-navbar>
-</div>
+    <div class="main-content">
+      <app-navbar></app-navbar>
+      <div class="content-area">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
