@@ -1,0 +1,93 @@
+.main-space {
+    display: flex;
+}
+
+.location-area {
+    display: flex;
+    gap: 1rem; /* Adds space between date and add-location */
+}
+
+.date {
+    position: relative;
+    background-image: url(../../assets/image/image\ 1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 450px;
+    height: 10rem;
+}
+
+.date-text {
+    position: absolute;
+    top: 1rem; /* Adjust this value to position the date vertically */
+    right: 1rem; /* Adjust this value to position the date horizontally */
+    color: white; /* Change this based on your background image */
+    font-size: 1.2rem;
+    
+    
+    padding: 0.5rem;
+    border-radius: 3px;
+}
+
+.add-location {
+    background-color: rgb(242, 238, 238);
+    border-radius: 5px;
+    padding: 1rem;
+    min-width: 100px; /* Add a minimum width as needed */
+}
+.weather-highlights {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.weather-highlights h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.highlights-container {
+    display: flex;
+    gap: 20px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.highlight-item {
+    flex: 1;
+    min-width: 100px;
+}
+
+.highlight-item .label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.highlight-item .value {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Optional: Add hover effect */
+.highlight-item:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+    .highlights-container {
+        flex-wrap: wrap;
+    }
+    
+    .highlight-item {
+        flex: 1 1 40%;
+        text-align: center;
+        padding: 10px;
+    }
+}
